@@ -60,10 +60,7 @@ const PostReview = () => {
   const json = await res.json();
   if (json.status === 200) {
       window.location.href = window.location.origin+"/dealer/"+id;
-      console.log("added review")
   }
-  alert("ls are mandatory")
-
   }
   const get_dealer = async ()=>{
     const res = await fetch(dealer_url, {
